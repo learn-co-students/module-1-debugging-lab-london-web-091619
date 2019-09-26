@@ -1,3 +1,4 @@
+require 'pry'
 class Person
   attr_accessor :name, :candy_lover
 
@@ -7,6 +8,7 @@ class Person
   end
 
   def tall?
+    binding.pry
     true
   end
 
@@ -25,5 +27,7 @@ class Person
       10.times do
         "not a ballin candy lover"
     end
-  end
+  end 
+end 
+
 end
